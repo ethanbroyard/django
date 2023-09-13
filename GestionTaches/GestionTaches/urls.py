@@ -18,9 +18,12 @@ from django.contrib import admin
 from django.urls import include, path
 from lesTaches import views
 
+
 urlpatterns = [
     path("lesTaches/", include("lesTaches.urls")),
     path("admin/", admin.site.urls),
+    path('contacts/',include('myform.urls')),
+   
     # path("test/",views.index),
     # path("home/<name>",views.home,name="home"),
 ]
