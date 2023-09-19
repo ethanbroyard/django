@@ -3,25 +3,23 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <title>
+        <title >
         {% block title %}{% endblock %}
         </title>
         {% block metas %}
-        <meta name="viewport" content="width=device-width, initial-scale=1,
-        ˓→ shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
         {% endblock %}
         {% block styles %}
-        <link rel="stylesheet" href="{% static 'node_modules/bootstrap/
-        ˓→dist/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'node_modules/bootstrap/dist/css/bootstrap.min.css' %}">
         {% endblock %}
     </head>
     <body>
         {% block nav %}
-        <h1>Gestion des Taches</h1>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-        <a href="{% url 'lesTaches:listing' %}">Les Taches</a>
-        <a href="/admin"> Admin</a>
-        <a href="/contacts"> Contacts</a>
+        <h1 class="bg-secondary">Gestion des Taches</h1>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4 p-1">
+        <a class="p-1" href="{% url 'lesTaches:listing' %}">Les Taches</a>
+        <a class="p-1" href="/admin"> Admin</a>
+        <a class="p-1" href="/contacts"> Contacts</a>
         </nav>
         {% endblock %}
         <main role="main" class="container top-pushed">
@@ -31,12 +29,9 @@
         </div>
         </main>
         {% block js %}
-        <script src="{% static 'node_modules/jquery/dist/jquery.min.js
-        ˓→' %}"></script>
-        <script src="{% static 'node_modules/bootstrap/dist/js/
-        ˓→bootstrap.min.js' %}"></script>
-        <script src="{% static 'node_modules/popper.js/dist/popper.min.
-        ˓→js' %}"></script>
+        <script src="{% static 'node_modules/jquery/dist/jquery.min.js' %}"></script>
+        <script src="{% static 'node_modules/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'node_modules/popper.js/dist/popper.min.js' %}"></script>
         {% endblock %}
     </body>
 </html>

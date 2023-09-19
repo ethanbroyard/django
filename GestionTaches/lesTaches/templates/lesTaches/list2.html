@@ -16,16 +16,16 @@ Les Tâches
 
 {% for tache in objects %}
 <div class="row">
-    <div class="col">{{tache.name}}</div>
+    <div class="col text-success">{{tache.name}}</div>
     <div class="col">{{tache.created_date}}</div>
     <div class="col">{{tache.colored_due_date}}</div>
-    <i class="fa-solid fa-fish fa-shake "></i><i class="fa-solid fa-fish fa-shake"></i><i class="fa-solid fa-fish fa-shake"></i><i class="fa-solid fa-fish fa-shake"></i><i class="fa-solid fa-fish fa-shake"></i>
     <div class="col">
         {% if tache.closed %}
         <i class="fas fa-lock"></i>
         {% else %}
         <i class="fas fa-lock-open"></i>
         {% endif %}
+        <i class="fa-solid fa-door-closed fa-bounce"></i>
     </div>
     <a href="{% url 'lesTaches:details' tache.id %}">Voir détail</a>
 </div>

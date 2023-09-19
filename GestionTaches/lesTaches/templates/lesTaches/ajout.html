@@ -4,15 +4,15 @@
     {% load crispy_forms_tags %}
 
     {% block title %}
-    Nouveau Contact
+    Nouvelle tache
     {% endblock %}
 
     {% block navtitle %}
-    Nouveau Contact
+    Nouvelle tache
     {% endblock %}
 
     {% block content%}
-        <form action="/contacts/" method="POST">
+        <form action="/lesTaches/" method="POST">
         {% csrf_token %}
         {{ form | crispy }}
         <button type="submit" class="btn btn-success">
