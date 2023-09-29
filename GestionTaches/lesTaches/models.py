@@ -67,3 +67,4 @@ def colored_due_date(self):
 
 
 colored_due_date.allow_tags = True
+

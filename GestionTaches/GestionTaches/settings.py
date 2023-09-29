@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'myform',
     'crispy_forms',
     'crispy_bootstrap4',
+    'musiques',
 ]
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 MIDDLEWARE = [

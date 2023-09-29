@@ -28,7 +28,11 @@ Les Tâches
         <i class="fa-solid fa-door-closed fa-bounce"></i>
     </div>
     <a href="{% url 'lesTaches:details' tache.id %}">Voir détail</a>
+    <a href="{% url 'lesTaches:task-update' tache.id %}"> Modifier la tache</a>
+    <a href="{% url 'lesTaches:task-delete' tache.id %}"> Supprimer la tache</a>
 </div>
 {% endfor %}
-
+    <a href="{% url 'lesTaches:task-create' %}"> Ajouter une tache</a>
+    
+    
 {% endblock %}

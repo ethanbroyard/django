@@ -23,6 +23,7 @@ urlpatterns = [
     path("lesTaches/", include("lesTaches.urls")),
     path("admin/", admin.site.urls),
     path('contacts/',include('myform.urls')),
+    path('musiques/', include('musiques.urls'))
    
     # path("test/",views.index),
     # path("home/<name>",views.home,name="home"),
